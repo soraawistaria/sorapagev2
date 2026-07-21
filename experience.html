@@ -59,30 +59,32 @@
             <p class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde in, eveniet iusto, totam dignissimos neque, maiores explicabo commodi velit placeat possimus exercitationem quo ipsum reprehenderit sed sint suscipit odit!</p>
         </div>
     </div>
-    
+
     <div>
 
     </div>
 
-    <!-- <div class="m-10 border-2 h-100 rounded-[10px] grid grid-cols-3">
-        <div class="bg-white">
-            <div>
-                <button class="hover:text-pink-700 p-2">
-                    High School
-                </button>
-            </div>
-            <div>
-                <button class="hover:text-pink-700 p-2">
-                    University
-                </button>
-            </div>
-        </div>
-        <div class="col-span-2 bg-pink-700">
-            <div>
-                <img src="" alt="">
-            </div>
-        </div>
-    </div> -->
+<script>
+    function show_section(sectionName) {
+        const highschool = document.getElementById('section-high-school');
+        const university = document.getElementById('section-university');
+        const btnHS = document.getElementById('btn-hs');
+        const btnUni = document.getElementById('btn-uni');
 
+        if (sectionName === 'high-school') {
+            highschool.classList.remove('hidden');
+            university.classList.add('hidden');
+
+            btnHS.className = "font-bold";
+            btnUni.className = "";
+        } else {
+            university.classList.remove('hidden');
+            highschool.classList.add('hidden');
+
+            btnUni.className = "font-bold"
+            btnHS.className = ""
+        }
+    }
+</script>
 </body>
 </html>
