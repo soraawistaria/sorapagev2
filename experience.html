@@ -35,39 +35,73 @@
 
     <div class="grid grid-cols-2 h-[50px] items-center">
         <div class="text-center border-r-2">
-            <button onclick="">
+            <button onclick="show_section('high-school')" id="btn-hs" class="hover:font-bold">
                 High School
             </button>
         </div>
         <div class="text-center border-l-2">
-            <button onclick="">
+            <button onclick="show_section('university')" id="btn-uni" class="hover:font-bold">
                 University
             </button>
         </div>
     </div>
 
-    <div class="border-t-2">
-        <div>
-            <h3 class="p-2 font-bold">
+    <div id="HighSchool-section" class="border-t-2">
+        <div class="m-2 border-2 border-radius-3">
+            <h3 class="p-3 font-bold text-[3vw]">
                 Olimpiade Sains Tingkat Provinsi
             </h3>
-            <div class="flex scroll">
-                <img src="plcholder.jpg" alt="" class="h-100">
-                <img src="plcholder.jpg" alt="" class="h-100">
-                <img src="plcholder.jpg" alt="" class="h-100">
+            <div class="flex overflow-x-auto m-3 border-2 gap-2">
+                <img src="plcholder.jpg" alt="" class="h-75 shrink-0">
+                <img src="plcholder.jpg" alt="" class="h-75 shrink-0">
+                <img src="plcholder.jpg" alt="" class="h-75 shrink-0">
             </div>
-            <p class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde in, eveniet iusto, totam dignissimos neque, maiores explicabo commodi velit placeat possimus exercitationem quo ipsum reprehenderit sed sint suscipit odit!</p>
+            <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde in, eveniet iusto, totam dignissimos neque, maiores explicabo commodi velit placeat possimus exercitationem quo ipsum reprehenderit sed sint suscipit odit!</p>
+        </div>
+
+        <div class="m-2 border-2 border-radius-3">
+            <h3 class="p-3 font-bold text-[3vw]">
+                Yak
+            </h3>
+            <div class="flex overflow-x-auto m-3 border-2 gap-2">
+                <img src="plcholder.jpg" alt="" class="h-75 shrink-0">
+                <img src="plcholder.jpg" alt="" class="h-75 shrink-0">
+                <img src="plcholder.jpg" alt="" class="h-75 shrink-0">
+            </div>
+            <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde in, eveniet iusto, totam dignissimos neque, maiores explicabo commodi velit placeat possimus exercitationem quo ipsum reprehenderit sed sint suscipit odit!</p>
         </div>
     </div>
 
-    <div>
+    <div id="University-section" class="border-t-2 hidden">
+        <div class="m-2 border-2 border-radius-3">
+            <h3 class="p-3 font-bold text-[3vw]">
+                OSIS
+            </h3>
+            <div class="flex overflow-x-auto m-3 border-2 gap-2">
+                <img src="plcholder.jpg" alt="" class="h-75 shrink-0">
+                <img src="plcholder.jpg" alt="" class="h-75 shrink-0">
+                <img src="plcholder.jpg" alt="" class="h-75 shrink-0">
+            </div>
+            <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde in, eveniet iusto, totam dignissimos neque, maiores explicabo commodi velit placeat possimus exercitationem quo ipsum reprehenderit sed sint suscipit odit!</p>
+        </div>
 
+        <div class="m-2 border-2 border-radius-3">
+            <h3 class="p-3 font-bold text-[3vw]">
+                Yak
+            </h3>
+            <div class="flex overflow-x-auto m-3 border-2 gap-2">
+                <img src="plcholder.jpg" alt="" class="h-75 shrink-0">
+                <img src="plcholder.jpg" alt="" class="h-75 shrink-0">
+                <img src="plcholder.jpg" alt="" class="h-75 shrink-0">
+            </div>
+            <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde in, eveniet iusto, totam dignissimos neque, maiores explicabo commodi velit placeat possimus exercitationem quo ipsum reprehenderit sed sint suscipit odit!</p>
+        </div>
     </div>
 
 <script>
     function show_section(sectionName) {
-        const highschool = document.getElementById('section-high-school');
-        const university = document.getElementById('section-university');
+        const highschool = document.getElementById('HighSchool-section');
+        const university = document.getElementById('University-section');
         const btnHS = document.getElementById('btn-hs');
         const btnUni = document.getElementById('btn-uni');
 
@@ -76,13 +110,13 @@
             university.classList.add('hidden');
 
             btnHS.className = "font-bold";
-            btnUni.className = "";
+            btnUni.className = "hover:font-bold";
         } else {
             university.classList.remove('hidden');
             highschool.classList.add('hidden');
 
             btnUni.className = "font-bold"
-            btnHS.className = ""
+            btnHS.className = "hover:font-bold"
         }
     }
 </script>
