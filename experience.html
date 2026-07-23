@@ -52,7 +52,7 @@
     <div id="HighSchool-section" class="grid grid-cols-1 md:grid-cols-2">
         <div class="m-3 border-3 border rounded-[20px] border-[#A66466] bg-[#fde1e6] shadow-sm">
             <h3 class="p-3 font-semibold text-[4vw] md:text-[40px] text-[#A66466]">
-                Plesholder
+                OSIS
             </h3>
             <div class="flex overflow-x-auto m-3 border-2 border-[#A66466] gap-2 h-[45vw] md:h-[350px]">
                 <img src="plcholder.jpg" alt="" class="h-full shrink-0">
@@ -64,29 +64,17 @@
 
     </div>
 
-    <div id="University-section" class="border-t-2 hidden">
-        <div class="m-2 border-2 border-radius-3">
-            <h3 class="p-3 font-semibold text-[3vw]">
-                OSIS
+    <div id="University-section" class="hidden grid grid-cols-1 md:grid-cols-2">
+        <div class="m-3 border-3 border rounded-[20px] border-[#A66466] bg-[#fde1e6] shadow-sm">
+            <h3 class="p-3 font-semibold text-[4vw] md:text-[40px] text-[#A66466]">
+                HMTI
             </h3>
-            <div class="flex overflow-x-auto m-3 border-2 gap-2 h-[150px]">
-                <img src="plcholder.jpg" alt="" class=" shrink-0">
-                <img src="plcholder.jpg" alt="" class=" shrink-0">
-                <img src="plcholder.jpg" alt="" class=" shrink-0">
+            <div class="flex overflow-x-auto m-3 border-2 border-[#A66466] gap-2 h-[45vw] md:h-[350px]">
+                <img src="plcholder.jpg" alt="" class="h-full shrink-0">
+                <img src="plcholder.jpg" alt="" class="h-full shrink-0">
+                <img src="plcholder.jpg" alt="" class="h-full shrink-0">
             </div>
-            <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde in, eveniet iusto, totam dignissimos neque, maiores explicabo commodi velit placeat possimus exercitationem quo ipsum reprehenderit sed sint suscipit odit!</p>
-        </div>
-
-        <div class="m-2 border-2 border-radius-3">
-            <h3 class="p-3 font-bold text-[3vw]">
-                Yak
-            </h3>
-            <div class="flex overflow-x-auto m-3 border-2 gap-2">
-                <img src="plcholder.jpg" alt="" class="h-75 shrink-0">
-                <img src="plcholder.jpg" alt="" class="h-75 shrink-0">
-                <img src="plcholder.jpg" alt="" class="h-75 shrink-0">
-            </div>
-            <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde in, eveniet iusto, totam dignissimos neque, maiores explicabo commodi velit placeat possimus exercitationem quo ipsum reprehenderit sed sint suscipit odit!</p>
+            <p class="p-3 text-[2.5vw] md:text-[25px] text-[#A66466]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde in, eveniet iusto, totam dignissimos neque, maiores explicabo commodi velit placeat possimus exercitationem quo ipsum reprehenderit sed sint suscipit odit!</p>
         </div>
     </div>
 
@@ -101,14 +89,14 @@
             highschool.classList.remove('hidden');
             university.classList.add('hidden');
 
-            btnHS.className = "font-bold";
-            btnUni.className = "hover:font-bold";
+            btnHS.className = "font-bold text-[#d65571]";
+            btnUni.className = "hover:font-bold text-[#d65571]";
         } else {
             university.classList.remove('hidden');
             highschool.classList.add('hidden');
 
-            btnUni.className = "font-bold"
-            btnHS.className = "hover:font-bold"
+            btnUni.className = "font-bold text-[#d65571]"
+            btnHS.className = "hover:font-bold text-[#d65571]"
         }
     }
 </script>
