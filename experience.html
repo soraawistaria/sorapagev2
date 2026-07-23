@@ -8,56 +8,58 @@
     <title>Sora's Experiences</title>
     <link rel="icon" type="image/jpg" href="images/favicon.png">
 </head>
-<body class="bg-pink-200">
-    <nav class="sticky top-0 z-50 relative backdrop-blur-md border-b-5 border-white flex items-center">
+<body class="bg-[#F7EBE0]">
+    <nav class="bg-[#d65571] sticky top-0 z-50 relative backdrop-blur-md border-b-5 border-[#F7EBE0] flex items-center">
         <a href="index.html">
-            <div class="absolute top-0 left-0 h-full p-4 hover:text-pink-700">
-                <i class="fa-solid fa-left-long"></i>
+            <div class="absolute top-0 left-0 h-full p-4 transition-transform duration-300 hover:-translate-y-1">
+                <i class="fa-solid fa-left-long text-[#F7EBE0]"></i>
             </div>
         </a>
         <div class="flex items-center justify-center mx-auto">
             <a href="experience.html">
-                <div class="bg-white hover:bg-white p-4">
-                    <p>Experiences</p>
+                <div class="bg-[#F7EBE0] p-4">
+                    <p class="text-[#d65571] font-semibold transition-transform duration-300 hover:-translate-y-1">Experiences</p>
                 </div>
             </a>
             <a href="achievement.html">
-                <div class="hover:bg-white p-4">
-                    <p>Achievements</p>
+                <div class="p-4">
+                    <p class="text-[#F7EBE0] transition-transform duration-300 hover:-translate-y-1">Achievements</p>
                 </div>
             </a>
             <a href="contacts.html">
-                <div class="hover:bg-white p-4">
-                    <p>Contacts</p>
+                <div class="p-4">
+                    <p class="text-[#F7EBE0] transition-transform duration-300 hover:-translate-y-1">Contacts</p>
                 </div>
             </a>
         </div>
     </nav>
 
     <div class="grid grid-cols-2 h-[50px] items-center">
-        <div class="text-center border-r-2">
-            <button onclick="show_section('high-school')" id="btn-hs" class="hover:font-bold font-bold">
+        <div class="text-center border-r-2 border-[#d65571]">
+            <button onclick="show_section('high-school')" id="btn-hs" class="hover:font-bold font-bold text-[#d65571]">
                 High School
             </button>
         </div>
-        <div class="text-center border-l-2">
-            <button onclick="show_section('university')" id="btn-uni" class="hover:font-bold">
+        <div class="text-center border-l-2 border-[#d65571]">
+            <button onclick="show_section('university')" id="btn-uni" class="hover:font-bold text-[#d65571]">
                 University
             </button>
         </div>
     </div>
 
-    <div id="HighSchool-section" class="border-t-2">
-        <div class="m-2 border-2 border-radius-3">
-            <h3 class="p-3 font-semibold text-[4vw] md:text-[40px]">
+<!-- konten-konten -->
+
+    <div id="HighSchool-section" class="grid grid-cols-1 md:grid-cols-2">
+        <div class="m-3 border-3 border rounded-[20px] border-[#A66466] bg-[#fde1e6] shadow-sm">
+            <h3 class="p-3 font-semibold text-[4vw] md:text-[40px] text-[#A66466]">
                 Plesholder
             </h3>
-            <div class="flex overflow-x-auto m-3 border-2 gap-2 h-[45vw] md:h-[350px]">
+            <div class="flex overflow-x-auto m-3 border-2 border-[#A66466] gap-2 h-[45vw] md:h-[350px]">
                 <img src="plcholder.jpg" alt="" class="h-full shrink-0">
                 <img src="plcholder.jpg" alt="" class="h-full shrink-0">
                 <img src="plcholder.jpg" alt="" class="h-full shrink-0">
             </div>
-            <p class="p-3 text-[2.5vw] md:text-[25px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde in, eveniet iusto, totam dignissimos neque, maiores explicabo commodi velit placeat possimus exercitationem quo ipsum reprehenderit sed sint suscipit odit!</p>
+            <p class="p-3 text-[2.5vw] md:text-[25px] text-[#A66466]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde in, eveniet iusto, totam dignissimos neque, maiores explicabo commodi velit placeat possimus exercitationem quo ipsum reprehenderit sed sint suscipit odit!</p>
         </div>
 
     </div>
