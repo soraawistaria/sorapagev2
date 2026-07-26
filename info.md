@@ -7,3 +7,6 @@ color pallette
 #E07C8E
 #d65571
 #A66466
+
+attribute ke link lain
+style="color: blue; text-decoration: underline;" target="_blank"
